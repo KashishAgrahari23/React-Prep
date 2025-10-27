@@ -9,7 +9,10 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setData([...data, { name, mail, age }]);
-    console.log(data);
+    // console.log(data);
+    setName("")
+    setMail("")
+    setAge("")
   };
   return (
     <>
@@ -18,16 +21,19 @@ const Form = () => {
           type="text"
           onChange={(e) => setName(e.target.value)}
           value={name}
+          placeholder="enter name"
         />
         <input
           type="email"
           onChange={(e) => setMail(e.target.value)}
           value={mail}
+          placeholder="enter mail"
         />
         <input
           type="number"
           onChange={(e) => setAge(e.target.value)}
           value={age}
+          placeholder="enter age"
         />
 
         <button type="submit" onClick={handleSubmit}>
