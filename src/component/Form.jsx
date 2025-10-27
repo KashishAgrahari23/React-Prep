@@ -15,7 +15,7 @@ const Form = () => {
     setAge("")
   };
   return (
-    <>
+    <> 
       <div>
         <input
           type="text"
