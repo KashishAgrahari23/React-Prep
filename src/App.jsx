@@ -8,6 +8,7 @@ import Memo from './component/Memo'
 import Callbacks from './component/Callbacks'
 import FetchData from './component/FetchData/FetchData'
 import Form from './component/Form'
+import PriceAndChange from './component/PriceAndChange'
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
       {/* <Memo/> */}
       {/* <Callbacks /> */}
       {/* <FetchData/> */}
-      <Form/>
+      {/* <Form/> */}
+      <PriceAndChange />
     </>
   )
 }
